@@ -7,21 +7,25 @@ import HLogo from '@/assets/common/horizontal-logo.svg'
 
 const Header = () => {
     return (
-        <header className=' bg-secondary text-white'>
+        <header className=' bg-secondary text-foreground'>
             <MaxedWidthContainer className='flex items-center justify-between p-4'>
-                <Image src={HLogo} alt='LeafSync' height={50} className='text-2xl font-bold invert'/>
+                <Image src={HLogo} alt='LeafSync' height={50} className='text-2xl font-bold dark:invert'/>
                 <nav>
-                    <ul className='flex space-x-4'>
+
+                    <ul className='flex space-x-4 items-center'>
+
                         <li>
                             <Link href='/'>Home</Link>
                         </li>
                         <li>
                             <Link href='/projects'>Projects</Link>
                         </li>
+                        
+                        <UserButton />
+                        
 
                     </ul>
                 </nav>
-                <UserButton />
             </MaxedWidthContainer>
         </header>
     )

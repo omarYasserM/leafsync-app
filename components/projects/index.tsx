@@ -7,7 +7,7 @@ import ProjectCreationForm from './ProjectCreationForm'
 import useProjects from '@/data/useProjects'
 
 const Projects = () => {
-    const projects = useProjects()
+    // const projects = useProjects()
     const tabs = ['work', 'personal']
     
 
